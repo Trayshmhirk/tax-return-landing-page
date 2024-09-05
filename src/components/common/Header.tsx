@@ -1,0 +1,75 @@
+import { NavLink } from "react-router-dom";
+import { HamburgerIcon } from "../icons/HamburgerIcon";
+
+const Header = () => {
+   return (
+      <header className="bg-white flex justify-center items-center py-3 px-6 sm:px-8 md:px-12">
+         <div className="container flex items-center justify-between gap-4">
+            <div className="flex items-center gap-3">
+               <img
+                  width="44"
+                  height="44"
+                  src="https://img.icons8.com/external-flatarticons-blue-flatarticons/65/external-tax-taxes-flatarticons-blue-flatarticons.png"
+                  alt="external-tax-taxes-flatarticons-blue-flatarticons"
+               />
+               <h1 className="text-xl font-bold">Tax Returns</h1>
+            </div>
+
+            <nav className="hidden items-center md:gap-7 lg:gap-10 px-3 md:flex">
+               <NavLink
+                  to="/"
+                  className={({ isActive }) =>
+                     `font-medium transition-all duration-300 ease-in-out ${isActive ? "text-richElectricBlue" : "text-current"}`
+                  }
+               >
+                  Home
+               </NavLink>
+               <NavLink
+                  to="/features"
+                  className={({ isActive }) =>
+                     `font-medium transition-all duration-300 ease-in-out ${isActive ? "text-richElectricBlue" : "text-current"}`
+                  }
+               >
+                  Features
+               </NavLink>
+               <NavLink
+                  to="/about"
+                  className={({ isActive }) =>
+                     `font-medium transition-all duration-300 ease-in-out ${isActive ? "text-richElectricBlue" : "text-current"}`
+                  }
+               >
+                  About
+               </NavLink>
+               <NavLink
+                  to="/faq"
+                  className={({ isActive }) =>
+                     `font-medium transition-all duration-300 ease-in-out ${isActive ? "text-richElectricBlue" : "text-current"}`
+                  }
+               >
+                  FAQ
+               </NavLink>
+            </nav>
+
+            <div className="hidden items-center gap-4 px-3 md:flex">
+               <NavLink
+                  to="slogin"
+                  className={({ isActive }) =>
+                     `font-medium transition-all duration-300 ease-in-out ${isActive ? "text-richElectricBlue" : "text-current"}`
+                  }
+               >
+                  Login
+               </NavLink>
+               <button className="rounded-md bg-richElectricBlue hover:bg-opacity-70 px-5 py-2 text-white font-medium transition-all duration-300 ease-in-out">
+                  Sign up
+               </button>
+            </div>
+
+            <div className="block md:hidden">
+               <HamburgerIcon />
+            </div>
+         </div>
+      </header>
+   );
+};
+
+export default Header;

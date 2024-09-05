@@ -16,10 +16,19 @@
 
 @layer base {
   body {
-    @apply text-eerieBlack dark:text-white;
+    @apply bg-ghostWhite dark:bg-eerieBlack text-eerieBlack dark:text-white;
   }
 
   a {
-    @apply text-richElectricBlue underline;
+    @apply relative hover:text-richElectricBlue transition-all duration-300 ease-in-out;
+  }
+
+  a::before {
+    content: '';
+    @apply absolute left-0 bottom-0 w-full h-[2px] bg-richElectricBlue scale-x-0 transform origin-right transition-transform duration-300 ease-in-out;
+  }
+
+  a:hover::before {
+    @apply scale-x-100 origin-left;
   }
 }
