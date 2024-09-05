@@ -7,6 +7,7 @@ import {
 import { Suspense } from "react";
 
 import MainLayout from "../layouts/MainLayout";
+import { ErrorPage } from "../pages/ErrorPage";
 
 const router = createBrowserRouter(
    createRoutesFromElements(
@@ -18,8 +19,10 @@ const router = createBrowserRouter(
                   <MainLayout />
                </Suspense>
             }
-            // errorElement={<ErrorPage />}
-         ></Route>
+            errorElement={<ErrorPage />}
+         >
+            <Route path="*" element={<ErrorPage />} />
+         </Route>
       </>
    )
 );

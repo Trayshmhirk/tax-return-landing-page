@@ -32,3 +32,21 @@
     @apply scale-x-100 origin-left;
   }
 }
+
+@layer components {
+  .centered-circle {
+    @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
+  }
+
+  .hover-bg-shadow {
+    @apply transition-all duration-300 ease-in-out hover:bg-chineseWhite hover:bg-opacity-30 hover:shadow-md dark:hover:bg-chineseWhite dark:hover:bg-opacity-30 dark:hover:shadow-md-dark;
+  }
+
+  .hover-shadow {
+    @apply transition-transform duration-300 ease-in-out hover:-translate-y-[2px] hover:shadow-md dark:hover:shadow-md-dark;
+  }
+
+  .hover-shadow-body {
+    @apply transition-transform duration-300 ease-in-out hover:-translate-y-[2px] hover:shadow-lg dark:hover:shadow-lg-dark;
+  }
+}
