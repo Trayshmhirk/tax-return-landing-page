@@ -1,4 +1,5 @@
 // import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 import { useRouteError, useNavigate } from "react-router-dom";
 
 type Error = {
@@ -40,7 +41,7 @@ export const ErrorPage = ({
    return (
       <div
          id="error-page"
-         className={`relative w-full h-full flex flex-col gap-6 justify-center items-center dark:bg-eerieBlack px-6 py-20 overflow-hidden`}
+         className={`relative w-full min-h-[550px] h-full flex flex-col gap-6 justify-center items-center dark:bg-eerieBlack px-6 py-20 overflow-hidden`}
       >
          <div className="centered-circle w-[299px] h-[299px] md:w-[499px] md:h-[499px] bg-richElectricBlue bg-opacity-[0.03] rounded-full -z-0"></div>
          <div className="centered-circle w-[399px] h-[399px] md:w-[699px] md:h-[699px] bg-richElectricBlue bg-opacity-[0.03] rounded-full -z-0"></div>
@@ -66,24 +67,24 @@ export const ErrorPage = ({
                {error.data && (
                   <p className="text-xs md:text-sm">{error.data}</p>
                )}
-               <button
+               <Button
                   onClick={() =>
                      error.message ? window.location.reload() : navigate(-1)
                   }
-                  className="px-4 py-3 bg-richElectricBlue text-white font-medium rounded shadow-md dark:shadow-md-dark hover-shadow-body disabled:bg-spanishGray dark:disabled:bg-mutedGray mt-4 md:w-40 md:mt-6 w-40"
+                  className="mt-4 md:w-40 md:mt-6 w-40"
                >
                   {error.message ? "Reload page" : "Go back"}
-               </button>
+               </Button>
             </div>
          )}
          {resetErrorBoundary && (
-            <button
+            <Button
                onClick={resetErrorBoundary}
                type="button"
                className="px-4 py-3 bg-richElectricBlue font-medium rounded shadow-md dark:shadow-md-dark hover-shadow-body disabled:bg-spanishGray dark:disabled:bg-mutedGray text-white z-50"
             >
                Try Again
-            </button>
+            </Button>
          )}
       </div>
    );

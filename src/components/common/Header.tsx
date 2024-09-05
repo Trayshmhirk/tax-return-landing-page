@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { HamburgerIcon } from "../icons/HamburgerIcon";
+import { Button } from "../ui/button";
 
 const Header = () => {
    return (
@@ -59,9 +60,7 @@ const Header = () => {
                >
                   Login
                </NavLink>
-               <button className="rounded-md bg-richElectricBlue hover:bg-opacity-70 px-5 py-2 text-white font-medium transition-all duration-300 ease-in-out">
-                  Sign up
-               </button>
+               <Button className="">Sign up</Button>
             </div>
 
             <div className="block md:hidden">
