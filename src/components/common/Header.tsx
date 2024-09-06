@@ -20,7 +20,7 @@ const Header = () => {
                <NavLink
                   to="/"
                   className={({ isActive }) =>
-                     `font-medium transition-all duration-300 ease-in-out ${isActive ? "text-richElectricBlue" : "text-current"}`
+                     `${isActive ? "text-richElectricBlue" : "text-current"}`
                   }
                >
                   Home
@@ -28,7 +28,7 @@ const Header = () => {
                <NavLink
                   to="/features"
                   className={({ isActive }) =>
-                     `font-medium transition-all duration-300 ease-in-out ${isActive ? "text-richElectricBlue" : "text-current"}`
+                     `${isActive ? "text-richElectricBlue" : "text-current"}`
                   }
                >
                   Features
@@ -36,7 +36,7 @@ const Header = () => {
                <NavLink
                   to="/about"
                   className={({ isActive }) =>
-                     `font-medium transition-all duration-300 ease-in-out ${isActive ? "text-richElectricBlue" : "text-current"}`
+                     `${isActive ? "text-richElectricBlue" : "text-current"}`
                   }
                >
                   About
@@ -44,7 +44,7 @@ const Header = () => {
                <NavLink
                   to="/faq"
                   className={({ isActive }) =>
-                     `font-medium transition-all duration-300 ease-in-out ${isActive ? "text-richElectricBlue" : "text-current"}`
+                     `${isActive ? "text-richElectricBlue" : "text-current"}`
                   }
                >
                   FAQ
@@ -53,9 +53,9 @@ const Header = () => {
 
             <div className="hidden items-center gap-4 px-3 md:flex">
                <NavLink
-                  to="slogin"
+                  to="login"
                   className={({ isActive }) =>
-                     `font-medium transition-all duration-300 ease-in-out ${isActive ? "text-richElectricBlue" : "text-current"}`
+                     `${isActive ? "text-richElectricBlue" : "text-current"}`
                   }
                >
                   Login

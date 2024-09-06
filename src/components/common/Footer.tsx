@@ -6,8 +6,8 @@ import { FaTelegramPlane } from "react-icons/fa";
 
 const Footer = () => {
    return (
-      <div className="w-full h-full flex flex-col items-center bg-richElectricBlue text-white p-6 sm:px-8 sm:py-10 md:px-12">
-         <div className="container flex flex-col gap-8">
+      <div className="w-full h-full flex flex-col items-center bg-richElectricBlue text-white p-6 pb-10 sm:px-8 sm:py-14 md:px-12">
+         <div className="container flex flex-col gap-9">
             <div className="flex flex-col md:items-center md:flex-row md:justify-between gap-6">
                <div className="flex flex-col gap-2">
                   <h1 className="text-lg font-semibold">Join our newsletter</h1>
@@ -19,7 +19,7 @@ const Footer = () => {
                <div className="flex items-center gap-2">
                   <Input
                      placeholder="Enter your email"
-                     className="bg-transparent dark:bg-transparent font-medium placeholder:text-brightGray"
+                     className="bg-transparent dark:bg-transparent font-medium border-white placeholder:text-brightGray"
                   />
                   <Button className="bg-white text-eerieBlack">
                      Subscribe
@@ -27,7 +27,46 @@ const Footer = () => {
                </div>
             </div>
 
-            <div className="flex flex-col md:items-center md:flex-row md:justify-between gap-6">
+            <div className="flex flex-col items-center gap-4">
+               <div className="flex flex-col items-center">
+                  <img
+                     width="55"
+                     height="55"
+                     src="https://img.icons8.com/external-flatarticons-blue-flatarticons/65/external-tax-taxes-flatarticons-blue-flatarticons.png"
+                     alt="external-tax-taxes-flatarticons-blue-flatarticons"
+                  />
+                  <h1 className="text-xl font-bold">Tax Returns</h1>
+               </div>
+
+               <nav className="flex flex-col items-center gap-4 md:flex-row md:gap-7 lg:gap-8">
+                  <NavLink
+                     to="/features"
+                     className="footer-link hover:text-white"
+                  >
+                     Features
+                  </NavLink>
+                  <NavLink to="/about" className="footer-link hover:text-white">
+                     About
+                  </NavLink>
+                  <NavLink to="/about" className="footer-link hover:text-white">
+                     Contact
+                  </NavLink>
+                  <NavLink to="/faq" className="footer-link hover:text-white">
+                     FAQ
+                  </NavLink>
+                  <NavLink to="/help" className="footer-link hover:text-white">
+                     Help
+                  </NavLink>
+                  <NavLink
+                     to="/privacy"
+                     className="footer-link hover:text-white"
+                  >
+                     Privacy
+                  </NavLink>
+               </nav>
+            </div>
+
+            <div className="flex flex-col items-center md:flex-row md:justify-between gap-6">
                <span className="text-xs font-medium">
                   © 2024 Tax Returns. All rights reserved.
                </span>
