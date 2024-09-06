@@ -6,7 +6,7 @@ import { FaTelegramPlane } from "react-icons/fa";
 
 const Footer = () => {
    return (
-      <div className="w-full h-full flex flex-col items-center bg-richElectricBlue text-white p-6 pb-10 sm:px-8 sm:py-14 md:px-12">
+      <footer className="w-full h-full flex flex-col items-center bg-richElectricBlue text-white py-6 px-5 pb-10 sm:px-8 sm:py-14 lg:px-12">
          <div className="container flex flex-col gap-9">
             <div className="flex flex-col md:items-center md:flex-row md:justify-between gap-6">
                <div className="flex flex-col gap-2">
@@ -19,7 +19,7 @@ const Footer = () => {
                <div className="flex items-center gap-2">
                   <Input
                      placeholder="Enter your email"
-                     className="bg-transparent dark:bg-transparent font-medium border-white placeholder:text-brightGray"
+                     className="bg-transparent dark:bg-transparent font-medium border-white dark:border-white placeholder:text-brightGray dark:placeholder:text-brightGray"
                   />
                   <Button className="bg-white text-eerieBlack">
                      Subscribe
@@ -87,7 +87,7 @@ const Footer = () => {
                </div>
             </div>
          </div>
-      </div>
+      </footer>
    );
 };
 

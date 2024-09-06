@@ -1,10 +1,11 @@
 import { NavLink } from "react-router-dom";
 import { HamburgerIcon } from "../icons/HamburgerIcon";
 import { Button } from "../ui/button";
+import CustomThemeSwitch from "../custom/CustomThemeSwitch";
 
 const Header = () => {
    return (
-      <header className="bg-white flex justify-center items-center py-3 px-6 sm:px-8 md:px-12">
+      <header className="bg-white flex justify-center items-center dark:bg-gray py-3 px-5 sm:px-8 lg:px-10">
          <div className="container flex items-center justify-between gap-4">
             <div className="flex items-center gap-3">
                <img
@@ -13,7 +14,7 @@ const Header = () => {
                   src="https://img.icons8.com/external-flatarticons-blue-flatarticons/65/external-tax-taxes-flatarticons-blue-flatarticons.png"
                   alt="external-tax-taxes-flatarticons-blue-flatarticons"
                />
-               <h1 className="text-xl font-bold">Tax Returns</h1>
+               <h1 className="md:text-xl font-bold">Tax Returns</h1>
             </div>
 
             <nav className="hidden items-center md:gap-7 lg:gap-10 px-3 md:flex">
@@ -52,6 +53,7 @@ const Header = () => {
             </nav>
 
             <div className="hidden items-center gap-4 px-3 md:flex">
+               <CustomThemeSwitch />
                <NavLink
                   to="login"
                   className={({ isActive }) =>
@@ -63,7 +65,9 @@ const Header = () => {
                <Button className="">Sign up</Button>
             </div>
 
-            <div className="block md:hidden">
+            <div className="flex gap-2 md:hidden">
+               <CustomThemeSwitch />
+
                <HamburgerIcon />
             </div>
          </div>
