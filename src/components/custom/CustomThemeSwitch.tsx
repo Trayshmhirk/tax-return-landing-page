@@ -3,12 +3,11 @@ import { MdOutlineLightMode } from "react-icons/md";
 import { BsMoonStars } from "react-icons/bs";
 
 const CustomThemeSwitch = () => {
-   const { theme, setTheme } = useTheme(); // Extracting the current theme and setTheme function from context
+   const { theme, setTheme } = useTheme();
 
-   const isDark = theme === "dark"; // Check if the current theme is "dark"
-
+   const isDark = theme === "dark";
    const toggleTheme = () => {
-      setTheme(isDark ? "light" : "dark"); // Toggle between light and dark themes
+      setTheme(isDark ? "light" : "dark");
    };
 
    return (

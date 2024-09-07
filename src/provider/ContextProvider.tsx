@@ -1,4 +1,4 @@
-import { ThemeProvider } from "@/context/ThemeContext";
+import { ThemeContext } from "@/context/ThemeContext";
 
 type ContextProviderProps = {
    children: React.ReactNode;
@@ -6,9 +6,9 @@ type ContextProviderProps = {
 
 const ContextProvider = ({ children }: ContextProviderProps) => {
    return (
-      <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+      <ThemeContext defaultTheme="dark" storageKey="vite-ui-theme">
          {children}
-      </ThemeProvider>
+      </ThemeContext>
    );
 };
 
