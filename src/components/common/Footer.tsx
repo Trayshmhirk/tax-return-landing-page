@@ -7,7 +7,7 @@ import { FaTelegramPlane } from "react-icons/fa";
 const Footer = () => {
    return (
       <footer className="w-full h-full flex flex-col items-center bg-richElectricBlue text-white py-6 px-5 pb-10 sm:px-8 sm:py-14 lg:px-12">
-         <div className="container flex flex-col gap-9">
+         <div className="w-full md:container flex flex-col gap-9">
             <div className="flex flex-col md:items-center md:flex-row md:justify-between gap-6">
                <div className="flex flex-col gap-2">
                   <h1 className="text-lg font-semibold">Join our newsletter</h1>

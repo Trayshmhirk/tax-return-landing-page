@@ -4,10 +4,13 @@ import {
    RouterProvider,
    Route,
 } from "react-router-dom";
-import { Suspense } from "react";
+import { lazy, Suspense } from "react";
 
 import MainLayout from "../layouts/MainLayout";
 import { ErrorPage } from "../pages/ErrorPage";
+import ProtectedRoute from "./ProtectedRoutes";
+
+const Home = lazy(() => import("../pages/home/Home"));
 
 const router = createBrowserRouter(
    createRoutesFromElements(
@@ -21,6 +24,14 @@ const router = createBrowserRouter(
             }
             errorElement={<ErrorPage />}
          >
+            <Route
+               index
+               element={
+                  <ProtectedRoute>
+                     <Home />
+                  </ProtectedRoute>
+               }
+            />
             <Route path="*" element={<ErrorPage />} />
          </Route>
       </>

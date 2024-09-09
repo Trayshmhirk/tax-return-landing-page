@@ -5,8 +5,8 @@ import CustomThemeSwitch from "../custom/CustomThemeSwitch";
 
 const Header = () => {
    return (
-      <header className="bg-white flex justify-center items-center dark:bg-gray py-3 px-5 sm:px-8 lg:px-10">
-         <div className="container flex items-center justify-between gap-4">
+      <header className="bg-white flex justify-center items-center dark:bg-gray py-3 px-5 sm:px-7 lg:px-10">
+         <div className="w-full md:container flex items-center justify-between gap-4">
             <div className="flex items-center gap-3">
                <img
                   width="44"
