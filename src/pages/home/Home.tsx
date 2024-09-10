@@ -2,10 +2,10 @@ import { Button } from "@/components/ui/button";
 
 const Home = () => {
    return (
-      <div className="flex flex-col">
-         <div className="hero flex justify-center gap-6 bg-antiFlashWhite dark:bg-darkGray py-8 md:py-14 px-5 sm:px-8 lg:px-10">
+      <main className="flex flex-col">
+         {/* hero */}
+         <section className="flex justify-center gap-6 bg-antiFlashWhite dark:bg-darkGray py-8 md:py-14 px-5 sm:px-8 lg:px-10">
             <div className="container flex flex-col md:flex-row items-center gap-8">
-               {/* Text section */}
                <div className="w-full md:w-[40%] xl:w-1/3 flex flex-col gap-5 md:gap-8 text-center md:text-left">
                   <div className="flex flex-col gap-4">
                      <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-richElectricBlue tracking-wide">
@@ -48,11 +48,87 @@ const Home = () => {
                   </div>
                </div>
             </div>
-         </div>
+         </section>
 
          {/* body */}
-         <div className="">body</div>
-      </div>
+         <section className="flex flex-col items-center gap-10 md:gap-14 py-8 pb-10 md:py-14 px-5 sm:px-8 lg:px-10">
+            <div className="container flex flex-col sm:flex-row items-center justify-center gap-5 md:gap-8">
+               <div className="w-full h-full min-w-36 min-h-32 max-w-48 flex flex-col items-center justify-center gap-2 bg-richElectricBlue text-white text-center p-6 md:p-10 rounded-2xl shadow-xl dark:shadow-2xl">
+                  <p className="text-2xl md:text-4xl font-bold">1K</p>
+                  <span className="text-sm font-medium">HAPPY CUSTOMERS</span>
+               </div>
+               <div className="w-full h-full min-w-36 min-h-32 max-w-48 flex flex-col items-center justify-center gap-2 bg-richElectricBlue text-white text-center p-6 md:p-10 rounded-2xl shadow-xl dark:shadow-2xl">
+                  <p className="text-2xl md:text-4xl font-bold">$1M+</p>
+                  <span className="text-sm font-medium">
+                     MONTHLY TAX CLEARED
+                  </span>
+               </div>
+               <div className="w-full h-full min-w-36 min-h-32 max-w-48 flex flex-col items-center justify-center gap-2 bg-richElectricBlue text-white text-center p-6 md:p-10 rounded-2xl shadow-xl dark:shadow-2xl">
+                  <p className="text-2xl md:text-4xl font-bold">24/7</p>
+                  <span className="text-sm font-medium">
+                     PROFESSIONAL SUPPORT
+                  </span>
+               </div>
+            </div>
+
+            <div className="container flex flex-col sm:flex-row items-center justify-center gap-5 lg:gap-10">
+               <div className="flex flex-col items-center justify-center gap-3 text-center">
+                  <p className="text-sm md:text-xl font-bold">Advantages</p>
+                  <span className="max-w-[300px] sm:max-w-xs text-mutedGray dark:text-spanishGray text-xs md:text-sm font-medium">
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                     Necessitatibus culpa ex architecto rem.
+                  </span>
+               </div>
+               <div className="flex flex-col items-center justify-center gap-3 text-center">
+                  <p className="text-sm md:text-xl font-bold">Benefits</p>
+                  <span className="max-w-[300px] sm:max-w-xs text-mutedGray dark:text-spanishGray text-xs md:text-sm font-medium">
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                     Necessitatibus culpa ex architecto rem.
+                  </span>
+               </div>
+               <div className="flex flex-col items-center justify-center gap-3 text-center">
+                  <p className="text-sm md:text-xl font-bold">Profits</p>
+                  <span className="max-w-[300px] sm:max-w-xs text-mutedGray dark:text-spanishGray text-xs md:text-sm font-medium">
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                     Necessitatibus culpa ex architecto rem.
+                  </span>
+               </div>
+            </div>
+         </section>
+
+         <section className="flex flex-col items-center gap-10 md:gap-14 py-8 pb-10 md:py-14 px-5 sm:px-8 lg:px-10">
+            <div className="container flex flex-col sm:flex-row items-center justify-center gap-5 md:gap-8">
+               rest
+            </div>
+         </section>
+
+         <section className="flex flex-col items-center gap-10 md:gap-14 my-8 md:my-14 mx-5 md:mx-10 xl:mx-20 p-6 md:px-10 md:py-12 bg-bubbles rounded-xl shadow-xl">
+            <div className="container flex flex-col-reverse sm:flex-row justify-center items-center gap-6 md:gap-8">
+               <div className="w-full flex flex-col gap-3 text-center sm:text-left">
+                  <h2 className="text-2xl md:text-4xl font-bold text-richElectricBlue">
+                     Join thousands <br /> who already trust us
+                  </h2>
+
+                  <p className="max-w-sm self-center md:self-start font-medium">
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Perferendis corporis distinctio non qui! Eos, saepe!
+                  </p>
+
+                  <Button className="w-full sm:max-w-48 self-center sm:self-start mt-3">
+                     Get started
+                  </Button>
+               </div>
+
+               <div className="w-full flex justify-center md:justify-start">
+                  <img
+                     src="https://i.postimg.cc/FH9sLRvD/istockphoto-1408321925-1024x1024.jpg"
+                     alt="image"
+                     className="w-full max-w-md md:max-w-lg rounded-xl"
+                  />
+               </div>
+            </div>
+         </section>
+      </main>
    );
 };
 
