@@ -102,10 +102,10 @@ const Home = () => {
             </div>
          </section>
 
-         <section className="flex flex-col items-center gap-10 md:gap-14 my-8 md:my-14 mx-5 md:mx-10 xl:mx-20 p-6 md:px-10 md:py-12 bg-bubbles rounded-xl shadow-xl">
+         <section className="flex flex-col items-center gap-10 md:gap-14 my-8 md:my-14 mx-5 md:mx-10 xl:mx-20 p-6 md:px-10 md:py-12 bg-bubbles dark:bg-gray rounded-xl shadow-xl dark:shadow-2xl">
             <div className="container flex flex-col-reverse sm:flex-row justify-center items-center gap-6 md:gap-8">
                <div className="w-full flex flex-col gap-3 text-center sm:text-left">
-                  <h2 className="text-2xl md:text-4xl font-bold text-richElectricBlue">
+                  <h2 className="text-2xl md:text-4xl font-extrabold text-richElectricBlue">
                      Join thousands <br /> who already trust us
                   </h2>
 

@@ -48,7 +48,10 @@ const Footer = () => {
                   <NavLink to="/about" className="footer-link hover:text-white">
                      About
                   </NavLink>
-                  <NavLink to="/about" className="footer-link hover:text-white">
+                  <NavLink
+                     to="/contact"
+                     className="footer-link hover:text-white"
+                  >
                      Contact
                   </NavLink>
                   <NavLink to="/faq" className="footer-link hover:text-white">
