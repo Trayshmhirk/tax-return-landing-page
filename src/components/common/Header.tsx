@@ -35,12 +35,12 @@ const Header = () => {
                   Features
                </NavLink>
                <NavLink
-                  to="/about"
+                  to="/contact"
                   className={({ isActive }) =>
                      `${isActive ? "text-richElectricBlue" : "text-current"}`
                   }
                >
-                  About
+                  Contact Us
                </NavLink>
                <NavLink
                   to="/faq"

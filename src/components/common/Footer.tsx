@@ -52,7 +52,7 @@ const Footer = () => {
                      to="/contact"
                      className="footer-link hover:text-white"
                   >
-                     Contact
+                     Contact Us
                   </NavLink>
                   <NavLink to="/faq" className="footer-link hover:text-white">
                      FAQ
