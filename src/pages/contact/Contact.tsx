@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import Map from "@/components/contact/Map";
+import { ContactIcon, MailOpen, MapPinHouse } from "lucide-react";
 
 const Contact = () => {
    return (
@@ -94,6 +95,39 @@ const Contact = () => {
                         </Button>
                      </div>
                   </div>
+               </div>
+            </div>
+
+            <div className="container grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-8">
+               <div className="flex flex-col gap-5 bg-darkRichElectricBlue text-white px-6 py-8 rounded-xl">
+                  <h2 className="flex items-center gap-2 lg:text-lg font-bold">
+                     <ContactIcon />
+                     (+234) 80 5571 2758
+                  </h2>
+                  <p className="max-w-sm text-sm font-medium">
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                     Sapiente sint quisquam quam nostrum, nihil et soluta!
+                  </p>
+               </div>
+               <div className="flex flex-col gap-5 bg-richElectricBlue text-white px-6 py-8 rounded-xl">
+                  <h2 className="flex items-center gap-2 lg:text-lg font-bold">
+                     <MailOpen />
+                     mail@taxreturns.com
+                  </h2>
+                  <p className="max-w-sm text-sm font-medium">
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                     Sapiente sint quisquam quam nostrum, nihil et soluta!
+                  </p>
+               </div>
+               <div className="flex flex-col gap-5 bg-bubbles dark:text-eerieBlack px-6 py-8 rounded-xl">
+                  <h2 className="flex items-center gap-2 lg:text-lg font-bold">
+                     <MapPinHouse />
+                     Lagos, Nigeria.
+                  </h2>
+                  <p className="max-w-sm text-sm font-medium">
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                     Sapiente sint quisquam quam nostrum, nihil et soluta!
+                  </p>
                </div>
             </div>
 
