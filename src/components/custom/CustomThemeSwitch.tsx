@@ -1,4 +1,4 @@
-import { useTheme } from "@/hooks/context/useTheme";
+import { useTheme } from "@/hooks/useTheme";
 import { MdOutlineLightMode } from "react-icons/md";
 import { BsMoonStars } from "react-icons/bs";
 

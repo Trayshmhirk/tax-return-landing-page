@@ -9,6 +9,7 @@ import { lazy, Suspense } from "react";
 import MainLayout from "../layouts/MainLayout";
 import { ErrorPage } from "../pages/ErrorPage";
 import ProtectedRoute from "./ProtectedRoutes";
+import PageLoader from "@/components/loaders/PageLoader";
 
 const Home = lazy(() => import("../pages/home/Home"));
 const Contact = lazy(() => import("../pages/contact/Contact"));
@@ -19,7 +20,7 @@ const router = createBrowserRouter(
          <Route
             path="/"
             element={
-               <Suspense fallback={<div>Loading ...</div>}>
+               <Suspense fallback={<PageLoader />}>
                   <MainLayout />
                </Suspense>
             }
