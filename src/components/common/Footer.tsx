@@ -10,7 +10,7 @@ const Footer = () => {
          <div className="w-full md:container flex flex-col gap-8">
             <div className="flex flex-col md:items-center md:flex-row md:justify-between gap-6">
                <div className="flex flex-col gap-2">
-                  <h1 className="text-lg font-semibold">Join our newsletter</h1>
+                  <h1 className="text-xl font-bold">Join our newsletter</h1>
                   <span className="text-sm font-medium">
                      We'll send you a nice letter once per week. No spam.
                   </span>
@@ -93,6 +93,12 @@ const Footer = () => {
                            About Us
                         </NavLink>
                         <NavLink
+                           to="/about"
+                           className="footer-link hover:text-white"
+                        >
+                           Blog
+                        </NavLink>
+                        <NavLink
                            to="/terms"
                            className="footer-link hover:text-white"
                         >
@@ -103,18 +109,10 @@ const Footer = () => {
                   <nav className="flex flex-col gap-3 md:gap-4 items-center md:items-start text-sm">
                      <p className="text-base font-bold">Information</p>
                      <div className="flex flex-col gap-2 items-center md:items-start">
-                        <NavLink
-                           to="/contact"
-                           className="footer-link hover:text-white"
-                        >
+                        <p className="font-medium">
                            Phone: (+234) 805 571 2758
-                        </NavLink>
-                        <NavLink
-                           to="/about"
-                           className="footer-link hover:text-white"
-                        >
-                           Email: @taxreturns.com
-                        </NavLink>
+                        </p>
+                        <p className="font-medium">Email: @taxreturns.com</p>
                      </div>
                   </nav>
                </div>
