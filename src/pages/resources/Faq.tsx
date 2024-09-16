@@ -1,3 +1,5 @@
+import { Accordion } from "@/components/custom/Accordion";
+
 const Faq = () => {
    return (
       <main className="flex flex-col">
@@ -41,9 +43,59 @@ const Faq = () => {
                   </p>
                </div>
 
-               <div className="flex flex-col gap-8">
-                  <div className="flex flex-col gap-4">
-                     <h3 className="text-lg md:text-2xl font-bold">Basic</h3>
+               <div className="flex flex-col gap-7">
+                  <div className="flex flex-col gap-5">
+                     <h3 className="text-lg md:text-2xl font-bold">Services</h3>
+                     <div className="flex flex-col gap-4">
+                        <Accordion
+                           question="Lorem ipsum dolor sit amet, consectetur adipisicing elit?"
+                           answer="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas perferendis at iure vel facere, ipsam debitis omnis voluptatum eligendi ut praesentium unde molestiae illo tenetur."
+                        />
+                        <Accordion
+                           question="Lorem ipsum dolor sit amet, consectetur adipisicing elit?"
+                           answer="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas perferendis at iure vel facere, ipsam debitis omnis voluptatum eligendi ut praesentium unde molestiae illo tenetur."
+                        />
+                        <Accordion
+                           question="Lorem ipsum dolor sit amet, consectetur adipisicing elit?"
+                           answer="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas perferendis at iure vel facere, ipsam debitis omnis voluptatum eligendi ut praesentium unde molestiae illo tenetur."
+                        />
+                     </div>
+                  </div>
+
+                  <div className="flex flex-col gap-5">
+                     <h3 className="text-lg md:text-2xl font-bold">Tax</h3>
+                     <div className="flex flex-col gap-4">
+                        <Accordion
+                           question="Lorem ipsum dolor sit amet, consectetur adipisicing elit?"
+                           answer="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas perferendis at iure vel facere, ipsam debitis omnis voluptatum eligendi ut praesentium unde molestiae illo tenetur."
+                        />
+                        <Accordion
+                           question="Lorem ipsum dolor sit amet, consectetur adipisicing elit?"
+                           answer="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas perferendis at iure vel facere, ipsam debitis omnis voluptatum eligendi ut praesentium unde molestiae illo tenetur."
+                        />
+                        <Accordion
+                           question="Lorem ipsum dolor sit amet, consectetur adipisicing elit?"
+                           answer="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas perferendis at iure vel facere, ipsam debitis omnis voluptatum eligendi ut praesentium unde molestiae illo tenetur."
+                        />
+                     </div>
+                  </div>
+
+                  <div className="flex flex-col gap-5">
+                     <h3 className="text-lg md:text-2xl font-bold">Audits</h3>
+                     <div className="flex flex-col gap-4">
+                        <Accordion
+                           question="Lorem ipsum dolor sit amet, consectetur adipisicing elit?"
+                           answer="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas perferendis at iure vel facere, ipsam debitis omnis voluptatum eligendi ut praesentium unde molestiae illo tenetur."
+                        />
+                        <Accordion
+                           question="Lorem ipsum dolor sit amet, consectetur adipisicing elit?"
+                           answer="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas perferendis at iure vel facere, ipsam debitis omnis voluptatum eligendi ut praesentium unde molestiae illo tenetur."
+                        />
+                        <Accordion
+                           question="Lorem ipsum dolor sit amet, consectetur adipisicing elit?"
+                           answer="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas perferendis at iure vel facere, ipsam debitis omnis voluptatum eligendi ut praesentium unde molestiae illo tenetur."
+                        />
+                     </div>
                   </div>
                </div>
             </div>
