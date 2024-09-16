@@ -12,7 +12,8 @@ import ProtectedRoute from "./ProtectedRoutes";
 import PageLoader from "@/components/loaders/PageLoader";
 
 const Home = lazy(() => import("../pages/home/Home"));
-const Contact = lazy(() => import("../pages/contact/Contact"));
+const Contact = lazy(() => import("../pages/company/Contact"));
+const Faq = lazy(() => import("../pages/resources/Faq"));
 
 const router = createBrowserRouter(
    createRoutesFromElements(
@@ -39,6 +40,14 @@ const router = createBrowserRouter(
                element={
                   <ProtectedRoute>
                      <Contact />
+                  </ProtectedRoute>
+               }
+            />
+            <Route
+               path="faq"
+               element={
+                  <ProtectedRoute>
+                     <Faq />
                   </ProtectedRoute>
                }
             />
