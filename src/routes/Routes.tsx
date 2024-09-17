@@ -13,6 +13,7 @@ import PageLoader from "@/components/loaders/PageLoader";
 
 const Home = lazy(() => import("../pages/home/Home"));
 const Contact = lazy(() => import("../pages/company/Contact"));
+const Terms = lazy(() => import("../pages/company/Terms"));
 const Faq = lazy(() => import("../pages/resources/Faq"));
 
 const router = createBrowserRouter(
@@ -40,6 +41,14 @@ const router = createBrowserRouter(
                element={
                   <ProtectedRoute>
                      <Contact />
+                  </ProtectedRoute>
+               }
+            />
+            <Route
+               path="terms"
+               element={
+                  <ProtectedRoute>
+                     <Terms />
                   </ProtectedRoute>
                }
             />
