@@ -29,7 +29,7 @@ const Terms = () => {
                      Welcome to Tax Returns
                   </h2>
 
-                  <p className="flex flex-col gap-3">
+                  <div className="flex flex-col gap-3">
                      <p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing
                         elit. Ut explicabo laborum, ex quasi officia, nulla
@@ -73,13 +73,13 @@ const Terms = () => {
                         cumque, facere, vero quas exercitationem perspiciatis
                         iste repudiandae voluptates.
                      </p>
-                  </p>
+                  </div>
                </div>
 
                <div className="flex flex-col gap-4">
                   <h2 className="text-lg md:text-2xl font-bold">Cookies</h2>
 
-                  <p className="flex flex-col gap-3">
+                  <div className="flex flex-col gap-3">
                      <p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing
                         elit. Ut explicabo laborum, ex quasi officia, nulla
@@ -92,13 +92,13 @@ const Terms = () => {
                         blanditiis nisi. Totam minima omnis ad cum corporis
                         voluptatem pariatur eveniet nam laudantium aliquam!
                      </p>
-                  </p>
+                  </div>
                </div>
 
                <div className="flex flex-col gap-4">
                   <h2 className="text-lg md:text-2xl font-bold">License</h2>
 
-                  <p className="flex flex-col gap-3">
+                  <div className="flex flex-col gap-3">
                      <p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing
                         elit. Ut explicabo laborum, ex quasi officia, nulla
@@ -195,7 +195,7 @@ const Terms = () => {
                         officia sapiente minus ducimus ut quo vel a voluptatem,
                         mollitia ipsa. Eos, quibusdam.
                      </p>
-                  </p>
+                  </div>
                </div>
 
                <div className="flex flex-col gap-4">
@@ -203,7 +203,7 @@ const Terms = () => {
                      Hyperlinking to our Content
                   </h2>
 
-                  <p className="flex flex-col gap-3">
+                  <div className="flex flex-col gap-3">
                      <div className="flex flex-col gap-1">
                         <span className="font-medium">
                            Lorem ipsum dolor sit amet consectetur adipisicing
@@ -303,7 +303,7 @@ const Terms = () => {
                         Adipisci est dolore delectus asperiores aspernatur nulla
                         ipsa fuga repudiandae reprehenderit tempore?
                      </p>
-                  </p>
+                  </div>
                </div>
 
                <div className="flex flex-col gap-4">
@@ -335,7 +335,7 @@ const Terms = () => {
                <div className="flex flex-col gap-4">
                   <h2 className="text-lg md:text-2xl font-bold">Disclaimer</h2>
 
-                  <p className="flex flex-col gap-3">
+                  <div className="flex flex-col gap-3">
                      <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Iusto voluptas architecto voluptatem maxime ipsam ullam,
@@ -375,7 +375,7 @@ const Terms = () => {
                         Officiis eum vitae nesciunt quo voluptatum veritatis
                         aperiam dolore expedita debitis sit!
                      </p>
-                  </p>
+                  </div>
                </div>
             </div>
          </section>
