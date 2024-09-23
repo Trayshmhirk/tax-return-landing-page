@@ -5,7 +5,7 @@ const Privacy = () => {
             className="relative flex justify-center gap-6 py-8 md:py-14 px-5 sm:px-8 lg:px-10"
             style={{
                backgroundImage:
-                  "url(https://i.postimg.cc/ryQt80BW/terms-image.jpg)", //
+                  "url(https://i.postimg.cc/7YZPZM22/istockphoto-1397234860-2048x2048-1.jpg)", //
                backgroundRepeat: "no-repeat",
                backgroundSize: "cover",
                backgroundPosition: "center",
@@ -13,7 +13,7 @@ const Privacy = () => {
             }}
          >
             {/* Blue transparent overlay */}
-            <div className="absolute inset-0 bg-gray opacity-60" />
+            <div className="absolute inset-0 bg-gray opacity-70" />
 
             <div className="container min-h-56 flex flex-col items-center justify-center gap-4 text-center z-50">
                <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-wide">
