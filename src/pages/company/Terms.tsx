@@ -22,10 +22,10 @@ const Terms = () => {
             </div>
          </section>
 
-         <section className="flex flex-col items-center gap-10 md:gap-14 py-8 pb-10 md:py-16 px-5 sm:px-8 lg:px-10">
+         <section className="flex flex-col items-center py-8 pb-10 md:py-16 px-5 sm:px-8 lg:px-10">
             <div className="container flex flex-col gap-6">
                <div className="flex flex-col gap-4">
-                  <h2 className="text-xl md:text-2xl font-bold">
+                  <h2 className="text-lg md:text-xl font-bold">
                      Welcome to Tax Returns
                   </h2>
 
@@ -77,7 +77,7 @@ const Terms = () => {
                </div>
 
                <div className="flex flex-col gap-4">
-                  <h2 className="text-lg md:text-2xl font-bold">Cookies</h2>
+                  <h2 className="text-lg md:text-xl font-bold">Cookies</h2>
 
                   <div className="flex flex-col gap-3">
                      <p>
@@ -96,7 +96,7 @@ const Terms = () => {
                </div>
 
                <div className="flex flex-col gap-4">
-                  <h2 className="text-lg md:text-2xl font-bold">License</h2>
+                  <h2 className="text-lg md:text-xl font-bold">License</h2>
 
                   <div className="flex flex-col gap-3">
                      <p>
@@ -199,7 +199,7 @@ const Terms = () => {
                </div>
 
                <div className="flex flex-col gap-4">
-                  <h2 className="text-lg md:text-2xl font-bold">
+                  <h2 className="text-lg md:text-xl font-bold">
                      Hyperlinking to our Content
                   </h2>
 
@@ -307,15 +307,13 @@ const Terms = () => {
                </div>
 
                <div className="flex flex-col gap-4">
-                  <h2 className="text-lg md:text-2xl font-bold">
-                     Your privacy
-                  </h2>
+                  <h2 className="text-lg md:text-xl font-bold">Your privacy</h2>
 
                   <p>Please read Privacy Policy.</p>
                </div>
 
                <div className="flex flex-col gap-4">
-                  <h2 className="text-lg md:text-2xl font-bold">
+                  <h2 className="text-lg md:text-xl font-bold">
                      Reservation of rights
                   </h2>
 
@@ -333,7 +331,7 @@ const Terms = () => {
                </div>
 
                <div className="flex flex-col gap-4">
-                  <h2 className="text-lg md:text-2xl font-bold">Disclaimer</h2>
+                  <h2 className="text-lg md:text-xl font-bold">Disclaimer</h2>
 
                   <div className="flex flex-col gap-3">
                      <p>
