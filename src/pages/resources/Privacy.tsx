@@ -22,70 +22,107 @@ const Privacy = () => {
             </div>
          </section>
 
-         <section className="flex flex-col items-center gap-10 md:gap-14 py-8 pb-10 md:py-16 px-5 sm:px-8 lg:px-10">
+         <section className="flex flex-col items-center py-8 pb-10 md:py-16 px-5 sm:px-8 lg:px-10">
             <div className="container flex flex-col gap-6">
-               <h2 className="text-2xl font-bold">1. Introduction</h2>
-               <p>
-                  Welcome to [Your Company Name]'s Privacy Policy. We value your
-                  privacy and are committed to protecting your personal
-                  information while using our tax return services.
-               </p>
+               <div className="flex flex-col gap-4">
+                  <h2 className="text-lg md:text-xl font-bold">Introduction</h2>
 
-               <h2 className="text-2xl font-bold">2. Information We Collect</h2>
-               <p>We may collect the following types of information:</p>
-               <ul className="list-disc pl-5">
-                  <li>Personal Information (Name, Email, Phone number)</li>
-                  <li>
-                     Tax-related Information (Income, Deductions, Filing Status)
-                  </li>
-                  <li>Usage Data (IP address, browser type, pages visited)</li>
-               </ul>
+                  <p>
+                     Welcome to Tax Returns Privacy Policy. We value your
+                     privacy and are committed to protecting your personal
+                     information while using our tax return services.
+                  </p>
+               </div>
 
-               <h2 className="text-2xl font-bold">
-                  3. How We Use Your Information
-               </h2>
-               <p>We use your information to:</p>
-               <ul className="list-disc pl-5">
-                  <li>Provide and maintain our tax return services</li>
-                  <li>Process your tax returns</li>
-                  <li>
-                     Communicate with you regarding your account or support
-                  </li>
-               </ul>
+               <div className="flex flex-col gap-4">
+                  <h2 className="text-lg md:text-xl font-bold">
+                     Information We Collect
+                  </h2>
 
-               <h2 className="text-2xl font-bold">4. Data Security</h2>
-               <p>
-                  We take the security of your personal information seriously
-                  and employ various measures to protect it from unauthorized
-                  access, alteration, or disclosure.
-               </p>
+                  <div className="flex flex-col gap-3">
+                     <p>We may collect the following types of information:</p>
+                     <ul className="list-disc pl-5">
+                        <li>
+                           Personal Information (Name, Email, Phone number)
+                        </li>
+                        <li>
+                           Tax-related Information (Income, Deductions, Filing
+                           Status)
+                        </li>
+                        <li>
+                           Usage Data (IP address, browser type, pages visited)
+                        </li>
+                     </ul>
+                  </div>
+               </div>
 
-               <h2 className="text-2xl font-bold">5. Sharing of Data</h2>
-               <p>
-                  We do not share your personal information with third parties
-                  except as necessary to complete your tax return or as required
-                  by law.
-               </p>
+               <div className="flex flex-col gap-4">
+                  <h2 className="text-lg md:text-xl font-bold">
+                     How We Use Your Information
+                  </h2>
 
-               <h2 className="text-2xl font-bold">6. Your Rights</h2>
-               <p>
-                  You have the right to access, update, or delete your personal
-                  data. To exercise these rights, please contact us at [Your
-                  Contact Information].
-               </p>
+                  <div className="flex flex-col gap-3">
+                     <p>We use your information to:</p>
+                     <ul className="list-disc pl-5">
+                        <li>Provide and maintain our tax return services</li>
+                        <li>Process your tax returns</li>
+                        <li>
+                           Communicate with you regarding your account or
+                           support
+                        </li>
+                     </ul>
+                  </div>
+               </div>
 
-               <h2 className="text-2xl font-bold">7. Changes to This Policy</h2>
-               <p>
-                  We may update this Privacy Policy from time to time. We will
-                  notify you of any changes by posting the new policy on our
-                  website.
-               </p>
+               <div className="flex flex-col gap-4">
+                  <h2 className="text-lg md:text-xl font-bold">
+                     Data Security
+                  </h2>
+                  <p>
+                     We take the security of your personal information seriously
+                     and employ various measures to protect it from unauthorized
+                     access, alteration, or disclosure.
+                  </p>
+               </div>
 
-               <h2 className="text-2xl font-bold">8. Contact Us</h2>
-               <p>
-                  If you have any questions about this Privacy Policy, please
-                  contact us at [Your Contact Information].
-               </p>
+               <div className="flex flex-col gap-4">
+                  <h2 className="text-lg md:text-xl font-bold">
+                     Sharing of Data
+                  </h2>
+                  <p>
+                     We do not share your personal information with third
+                     parties except as necessary to complete your tax return or
+                     as required by law.
+                  </p>
+               </div>
+
+               <div className="flex flex-col gap-4">
+                  <h2 className="text-lg md:text-xl font-bold">Your Rights</h2>
+                  <p>
+                     You have the right to access, update, or delete your
+                     personal data. To exercise these rights, please contact us
+                     at @taxreturns.com.
+                  </p>
+               </div>
+
+               <div className="flex flex-col gap-4">
+                  <h2 className="text-lg md:text-xl font-bold">
+                     Changes to This Policy
+                  </h2>
+                  <p>
+                     We may update this Privacy Policy from time to time. We
+                     will notify you of any changes by posting the new policy on
+                     our website.
+                  </p>
+               </div>
+
+               <div className="flex flex-col gap-4">
+                  <h2 className="text-lg md:text-xl font-bold">Contact Us</h2>
+                  <p>
+                     If you have any questions about this Privacy Policy, please
+                     contact us at @taxreturns.com.
+                  </p>
+               </div>
             </div>
          </section>
       </main>
