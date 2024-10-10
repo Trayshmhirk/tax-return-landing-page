@@ -2,7 +2,11 @@ import { useTheme } from "@/hooks/useTheme";
 import { MdOutlineLightMode } from "react-icons/md";
 import { BsMoonStars } from "react-icons/bs";
 
-const CustomThemeSwitch = () => {
+type CustomThemeSwitchProps = {
+   isSidebar?: boolean;
+};
+
+const CustomThemeSwitch = ({ isSidebar }: CustomThemeSwitchProps) => {
    const { theme, setTheme } = useTheme();
 
    const isDark = theme === "dark";
@@ -11,7 +15,9 @@ const CustomThemeSwitch = () => {
    };
 
    return (
-      <div className="flex items-center">
+      <div
+         className={`flex items-center ${isSidebar ? "" : "hidden md:block"}`}
+      >
          <div
             className="relative w-12 h-7 rounded-full bg-neutral-300 dark:bg-neutral-600 cursor-pointer"
             onClick={toggleTheme}
