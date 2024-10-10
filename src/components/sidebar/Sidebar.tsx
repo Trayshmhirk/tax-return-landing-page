@@ -4,6 +4,7 @@ import { HamburgerIcon } from "../icons/HamburgerIcon";
 import { useTheme } from "@/hooks/useTheme";
 import CustomThemeSwitch from "../custom/CustomThemeSwitch";
 import { NavLink } from "react-router-dom";
+import { Button } from "../ui/button";
 
 const Sidebar = () => {
    const { isOpen, toggleSidebar } = useSidebar();
@@ -27,23 +28,20 @@ const Sidebar = () => {
          >
             <div className="h-full flex flex-col justify-between">
                <div className="flex flex-col gap-10">
-                  <div className="flex flex-col gap-3">
-                     <div className="flex items-center justify-between">
-                        <div className="w-fit text-darkElectricBlue">
-                           <img
-                              width="44"
-                              height="44"
-                              src="https://img.icons8.com/external-flatarticons-blue-flatarticons/65/external-tax-taxes-flatarticons-blue-flatarticons.png"
-                              alt="external-tax-taxes-flatarticons-blue-flatarticons"
-                           />
-                        </div>
-                        <HamburgerIcon toggle={toggleSidebar} isOpen={isOpen} />
+                  <div className="flex items-center justify-between">
+                     <div className="w-fit text-darkElectricBlue">
+                        <img
+                           width="44"
+                           height="44"
+                           src="https://img.icons8.com/external-flatarticons-blue-flatarticons/65/external-tax-taxes-flatarticons-blue-flatarticons.png"
+                           alt="external-tax-taxes-flatarticons-blue-flatarticons"
+                        />
                      </div>
-                     <div className="w-full h-[1px] bg-eerieBlack dark:bg-white opacity-50" />
+                     <HamburgerIcon toggle={toggleSidebar} isOpen={isOpen} />
                   </div>
 
-                  <div className="flex flex-col gap-3">
-                     <nav className="flex flex-col items-center text-center gap-5">
+                  <div className="flex flex-col gap-10">
+                     <nav className="flex flex-col items-center text-center gap-6">
                         <NavLink
                            to="/"
                            className={({ isActive }) =>
@@ -80,35 +78,52 @@ const Sidebar = () => {
                         >
                            FAQ
                         </NavLink>
-                        {/* {navItemsData.map((navItem) => (
-                           <NavItems
-                              key={navItem.id}
-                              title={navItem.title}
-                              navIcon={navItem.navIcon}
-                              linkTo={navItem.route}
-                              onClick={() => handleToggleSidebar()}
-                              isActive={
-                                 location.pathname === `/${navItem.route}`
-                              }
-                              id={navItem.id}
-                              isCollapsed={isOpen}
-                              navBarAccess={isNotApproved}
-                              isChat={isChat}
-                           />
-                        ))} */}
+                        <NavLink
+                           to="/about"
+                           className={({ isActive }) =>
+                              `${isActive ? "text-richElectricBlue" : "text-current"}`
+                           }
+                           onClick={() => toggleSidebar()}
+                        >
+                           About Us
+                        </NavLink>
+                        <NavLink
+                           to="/about"
+                           className={({ isActive }) =>
+                              `${isActive ? "text-richElectricBlue" : "text-current"}`
+                           }
+                           onClick={() => toggleSidebar()}
+                        >
+                           Blog
+                        </NavLink>
                      </nav>
 
-                     {/* <NavItems
+                     <div className="w-full h-[1px] bg-eerieBlack dark:bg-white opacity-20" />
+
+                     <div className="flex flex-col items-center gap-6">
+                        <CustomThemeSwitch />
+                        <NavLink
+                           to="login"
+                           className={({ isActive }) =>
+                              `${isActive ? "text-richElectricBlue" : "text-current"}`
+                           }
+                        >
+                           Login
+                        </NavLink>
+                        <Button className="">Sign up</Button>
+
+                        {/* <NavItems
                         title="Logout"
                         navIcon={BiLogOut}
                         id="logout" // Ensure to provide an id for the logout item
                         onClick={() => console.log("Logout clicked")} // handleLogout function
                         isCollapsed={isOpen}
                      /> */}
+                     </div>
                   </div>
                </div>
 
-               <div className="flex flex-col items-center gap-2">
+               <div className="flex flex-col items-center">
                   <div
                      onClick={toggleTheme}
                      className={`flex items-center ${isOpen ? "" : "justify-center"} p-[10px] gap-4 rounded-lg cursor-pointer hover-bg-shadow`}
@@ -123,29 +138,6 @@ const Sidebar = () => {
                         </>
                      )}
                   </div>
-
-                  {/* <NavLink
-                     to={"/settings/profile"}
-                     onClick={() => handleToggleSidebar()}
-                     className={`
-                        flex items-center p-[10px] gap-4 rounded-lg no-underline
-                        ${isOpen ? "" : "justify-center"}
-                        ${isNotApproved ? "cursor-not-allowed" : "cursor-pointer"}
-                        ${isSettingsActive ? "bg-richElectricBlue text-white shadow-custom dark:shadow-md-dark" : " hover-bg-shadow"}
-                     `}
-                  >
-                     <IoSettingsOutline
-                        className={`w-5 h-5 ${isSettingsActive ? "text-white" : "text-eerieBlack dark:text-white"} `}
-                     />
-
-                     {isOpen && (
-                        <p
-                           className={`text-sm font-medium ${isSettingsActive ? "text-white" : "text-eerieBlack dark:text-white"}`}
-                        >
-                           Settings
-                        </p>
-                     )}
-                  </NavLink> */}
                </div>
             </div>
          </aside>
