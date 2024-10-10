@@ -5,15 +5,22 @@ import { HamburgerIcon } from "../icons/HamburgerIcon";
 const Sidebar = () => {
    const { isOpen, toggleSidebar } = useSidebar();
 
+   console.log(isOpen);
+
    return (
       <>
          <Overlay isOpen={isOpen} />
-         <aside>
+         <aside
+            className={`
+               fixed inset-y-0 z-[99] transform transition-transform duration-300 ease-in-out
+               ${isOpen ? "translate-x-0" : "-translate-x-full"}
+               w-[265px] xs:w-[300px] flex flex-col bg-white dark:bg-darkGray
+             text-eerieBlack dark:text-white p-6 shadow-md dark:shadow-md-dark md:hidden
+            ]`}
+         >
             <div className="h-full flex flex-col justify-between">
                <div className="flex flex-col gap-4">
-                  <div
-                     className={`flex ${isOpen ? "items-center justify-between" : "w-fit flex-col-reverse items-center self-center gap-4"} `}
-                  >
+                  <div className="flex items-center justify-between">
                      <div className="w-fit text-darkElectricBlue">
                         <img
                            width="44"
@@ -46,8 +53,6 @@ const Sidebar = () => {
                            />
                         ))} */}
                      </nav>
-
-                     <div className="w-full h-[1px] bg-eerieBlack dark:bg-white opacity-40" />
 
                      {/* <NavItems
                         title="Logout"

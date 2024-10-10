@@ -2,8 +2,11 @@ import { NavLink } from "react-router-dom";
 import { HamburgerIcon } from "../icons/HamburgerIcon";
 import { Button } from "../ui/button";
 import CustomThemeSwitch from "../custom/CustomThemeSwitch";
+import { useSidebar } from "@/hooks/useSidebar";
 
 const Header = () => {
+   const { isOpen, toggleSidebar } = useSidebar();
+
    return (
       <header className="bg-white flex justify-center items-center dark:bg-eerieBlack py-3 px-5 sm:px-7 lg:px-10 text-sm lg:text-base">
          <div className="w-full md:container flex items-center justify-between gap-4">
@@ -68,7 +71,7 @@ const Header = () => {
             <div className="flex gap-2 md:hidden">
                <CustomThemeSwitch />
 
-               <HamburgerIcon />
+               <HamburgerIcon toggle={toggleSidebar} isOpen={isOpen} />
             </div>
          </div>
       </header>
