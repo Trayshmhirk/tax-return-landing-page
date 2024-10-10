@@ -4,7 +4,6 @@ import { HamburgerIcon } from "../icons/HamburgerIcon";
 import { useTheme } from "@/hooks/useTheme";
 import CustomThemeSwitch from "../custom/CustomThemeSwitch";
 import { NavLink } from "react-router-dom";
-import { Button } from "../ui/button";
 
 const Sidebar = () => {
    const { isOpen, toggleSidebar } = useSidebar();
@@ -110,7 +109,12 @@ const Sidebar = () => {
                         >
                            Login
                         </NavLink>
-                        <Button className="">Sign up</Button>
+                        <NavLink
+                           to="sign-up"
+                           className="px-4 py-3 bg-richElectricBlue text-white text-sm font-medium rounded-md hover-shadow-body"
+                        >
+                           Sign up
+                        </NavLink>
 
                         {/* <NavItems
                         title="Logout"

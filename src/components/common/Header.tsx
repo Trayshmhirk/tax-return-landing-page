@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom";
 import { HamburgerIcon } from "../icons/HamburgerIcon";
-import { Button } from "../ui/button";
 import CustomThemeSwitch from "../custom/CustomThemeSwitch";
 import { useSidebar } from "@/hooks/useSidebar";
 
@@ -55,17 +54,25 @@ const Header = () => {
                </NavLink>
             </nav>
 
-            <div className="hidden items-center gap-4 px-3 md:flex">
+            <div className="hidden items-center gap-6 px-3 md:flex">
                <CustomThemeSwitch />
-               <NavLink
-                  to="login"
-                  className={({ isActive }) =>
-                     `${isActive ? "text-richElectricBlue" : "text-current"}`
-                  }
-               >
-                  Login
-               </NavLink>
-               <Button className="">Sign up</Button>
+
+               <div className="flex items-center gap-4">
+                  <NavLink
+                     to="login"
+                     className={({ isActive }) =>
+                        `${isActive ? "text-richElectricBlue" : "text-current"}`
+                     }
+                  >
+                     Login
+                  </NavLink>
+                  <NavLink
+                     to="sign-up"
+                     className="px-4 py-3 bg-richElectricBlue text-white text-sm font-medium rounded-md hover-shadow-body"
+                  >
+                     Sign up
+                  </NavLink>
+               </div>
             </div>
 
             <div className="flex gap-2 md:hidden">
