@@ -9,7 +9,7 @@ const Overlay = ({ isOpen }: OverlayProps) => {
    return (
       <div
          className={`fixed inset-0 bg-black/80 backdrop-blur-sm z-[99] ${
-            isOpen ? "block sm:hidden" : "hidden"
+            isOpen ? "block md:hidden" : "hidden"
          }`}
          onClick={toggleSidebar}
       />
