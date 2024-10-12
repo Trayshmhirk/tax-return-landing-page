@@ -21,7 +21,7 @@ const Contact = () => {
             {/* Blue transparent overlay */}
             <div className="absolute inset-0 bg-richElectricBlue opacity-40" />
 
-            <div className="container min-h-80 flex flex-col items-center justify-center gap-4 text-center z-50">
+            <div className="container min-h-64 flex flex-col items-center justify-center gap-4 text-center z-50">
                <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-wide">
                   Contact Us
                </h1>

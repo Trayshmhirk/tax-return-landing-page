@@ -11,13 +11,13 @@ const Help = () => {
                backgroundRepeat: "no-repeat",
                backgroundSize: "cover",
                backgroundPosition: "top",
-               backgroundPositionY: "40%",
+               backgroundPositionY: "45%",
             }}
          >
             {/* Blue transparent overlay */}
             <div className="absolute inset-0 bg-mutedGray opacity-60" />
 
-            <div className="container min-h-56 flex flex-col items-center justify-center gap-4 text-center z-50">
+            <div className="container min-h-64 flex flex-col items-center justify-center gap-4 text-center z-50">
                <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-wide">
                   Help and Support
                </h1>
