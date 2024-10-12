@@ -16,6 +16,7 @@ const Contact = lazy(() => import("../pages/company/Contact"));
 const Terms = lazy(() => import("../pages/company/Terms"));
 const Faq = lazy(() => import("../pages/resources/Faq"));
 const Privacy = lazy(() => import("../pages/resources/Privacy"));
+const Help = lazy(() => import("../pages/resources/Help"));
 
 const router = createBrowserRouter(
    createRoutesFromElements(
@@ -66,6 +67,14 @@ const router = createBrowserRouter(
                element={
                   <ProtectedRoute>
                      <Privacy />
+                  </ProtectedRoute>
+               }
+            />
+            <Route
+               path="help"
+               element={
+                  <ProtectedRoute>
+                     <Help />
                   </ProtectedRoute>
                }
             />
