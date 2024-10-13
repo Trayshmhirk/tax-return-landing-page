@@ -85,21 +85,21 @@ const Home = () => {
             <div className="container flex flex-col sm:flex-row items-center justify-center gap-5 lg:gap-10">
                <div className="flex flex-col items-center justify-center gap-3 text-center">
                   <p className="text-sm md:text-xl font-bold">Advantages</p>
-                  <span className="max-w-[300px] sm:max-w-xs text-mutedGray dark:text-spanishGray text-xs md:text-sm font-medium">
+                  <span className="max-w-[300px] sm:max-w-xs text-mutedGray dark:text-chineseWhite text-xs md:text-sm font-medium">
                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                      Necessitatibus culpa ex architecto rem.
                   </span>
                </div>
                <div className="flex flex-col items-center justify-center gap-3 text-center">
                   <p className="text-sm md:text-xl font-bold">Benefits</p>
-                  <span className="max-w-[300px] sm:max-w-xs text-mutedGray dark:text-spanishGray text-xs md:text-sm font-medium">
+                  <span className="max-w-[300px] sm:max-w-xs text-mutedGray dark:text-chineseWhite text-xs md:text-sm font-medium">
                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                      Necessitatibus culpa ex architecto rem.
                   </span>
                </div>
                <div className="flex flex-col items-center justify-center gap-3 text-center">
                   <p className="text-sm md:text-xl font-bold">Profits</p>
-                  <span className="max-w-[300px] sm:max-w-xs text-mutedGray dark:text-spanishGray text-xs md:text-sm font-medium">
+                  <span className="max-w-[300px] sm:max-w-xs text-mutedGray dark:text-chineseWhite text-xs md:text-sm font-medium">
                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                      Necessitatibus culpa ex architecto rem.
                   </span>
