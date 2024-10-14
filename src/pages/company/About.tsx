@@ -59,17 +59,17 @@ const About = () => {
             className="relative flex flex-col items-center gap-10 md:gap-14 py-8 pb-10 md:py-16 px-5 sm:px-8 lg:px-10"
             style={{
                backgroundImage:
-                  "url(https://i.postimg.cc/2jTGnrCZ/istockphoto-1434132794-2048x2048-1.jpg)", // https://i.postimg.cc/G3Nr306k/istockphoto-1261597991-2048x2048-1.jpg
+                  "url(https://i.postimg.cc/1RcFvvp6/istockphoto-1964940819-2048x2048-1.jpg)",
                backgroundRepeat: "no-repeat",
                backgroundSize: "cover",
                backgroundPosition: "top",
-               backgroundPositionY: "20%",
+               backgroundPositionY: "40%",
             }}
          >
             {/* Blue transparent overlay */}
             <div className="absolute inset-0 bg-richElectricBlue opacity-60" />
 
-            <div className="container flex flex-col sm:flex-row items-center justify-center gap-5 md:gap-8 z-50">
+            <div className="container grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center gap-5 md:gap-8 z-50">
                <div className="w-full h-full min-w-36 min-h-32 max-w-52 flex flex-col items-center justify-center gap-2 text-white text-center p-6 border border-lightGray rounded-sm">
                   <p className="text-2xl md:text-4xl font-bold">20+</p>
                   <span className="text-sm font-medium">Years Experience</span>
