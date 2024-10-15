@@ -2,6 +2,8 @@ import { PiChartLineUpBold } from "react-icons/pi";
 import { FaMagnifyingGlassChart } from "react-icons/fa6";
 import { FaUserTie } from "react-icons/fa";
 import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { TbTargetArrow } from "react-icons/tb";
 
 const About = () => {
    // Use an array of booleans to track collapsed state for each card
@@ -30,7 +32,7 @@ const About = () => {
             {/* Blue transparent overlay */}
             <div className="absolute inset-0 bg-mutedGray opacity-60" />
 
-            <div className="container min-h-64 flex flex-col items-center justify-center gap-4 text-center z-50">
+            <div className="container min-h-72 flex flex-col items-center justify-center gap-4 text-center z-50">
                <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-wide">
                   About Us
                </h1>
@@ -137,7 +139,7 @@ const About = () => {
                   ].map((item, idx) => (
                      <div
                         key={idx}
-                        className="relative w-full h-56 flex cursor-pointer"
+                        className="relative w-full h-64 flex cursor-pointer"
                         style={{
                            backgroundImage: `url(${item.bg_image})`,
                            backgroundRepeat: "no-repeat",
@@ -174,6 +176,90 @@ const About = () => {
                         </div>
                      </div>
                   ))}
+               </div>
+            </div>
+         </section>
+
+         <section className="relative flex flex-col items-center py-8 pb-10 md:py-16 px-5 sm:px-8 lg:px-10">
+            <div
+               className="absolute top-0 bottom-[55%] right-0 left-0 md:top-0 md:bottom-0 md:left-0 md:right-[55%] -z-[1]"
+               style={{
+                  backgroundImage:
+                     "url(https://i.postimg.cc/MZfx7mLS/istockphoto-1397274177-2048x2048-1.jpg)",
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+               }}
+            >
+               <div className="absolute inset-0 bg-richElectricBlue opacity-60" />
+            </div>
+            <div
+               className="absolute top-[45%] bottom-0 right-0 left-0 md:top-0 md:bottom-0 md:right-0 md:left-[45%] bg-cultured dark:bg-darkGray -z-[1]"
+               style={{
+                  backgroundImage:
+                     "url(https://i.postimg.cc/4329z6xr/Pngtree-lines-seamless-abstract-pattern-vector-9084491.png)",
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundBlendMode: "exclusion",
+               }}
+            ></div>
+
+            <div className="container flex flex-col md:flex-row gap-10 z-50">
+               <div className="w-full flex justify-center md:justify-start">
+                  <div className="max-w-96 md:max-w-72 flex flex-col items-center md:items-start gap-5 text-white">
+                     <h2 className="text-2xl md:text-4xl font-bold">
+                        Our <span className="text-blue-950">Services</span>
+                     </h2>
+                     <p className="w-full text-center md:text-start">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Debitis sapiente quaerat sunt, aut provident quas
+                        aliquam consequuntur mollitia commodi sed laudantium
+                        beatae deleniti necessitatibus?
+                     </p>
+                     <Button className="w-40 bg-blue-800 bg-opacity-40 rounded-none hover:bg-opacity-70">
+                        Learn More
+                     </Button>
+                  </div>
+               </div>
+
+               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center md:justify-items-start">
+                  <div className="w-full max-w-60 md:max-w-none min-h-56 md:min-h-72 h-full flex flex-col gap-4 bg-white dark:bg-gray p-6 shadow-md dark:shadow-md-dark ">
+                     <TbTargetArrow className="w-10 h-10" />
+
+                     <div className="flex flex-col gap-3">
+                        <h3 className="text-lg font-bold">Lorem Ipsum</h3>
+                        <p className="text-sm">
+                           Lorem, ipsum dolor sit amet consectetur adipisicing
+                           elit. Harum accusantium nostrum, iusto delectus ea
+                           sunt.
+                        </p>
+                     </div>
+                  </div>
+                  <div className="w-full max-w-60 min-h-56 md:min-h-72 h-full flex flex-col gap-4 bg-white dark:bg-gray p-6 shadow-md dark:shadow-md-dark ">
+                     <TbTargetArrow className="w-10 h-10" />
+
+                     <div className="flex flex-col gap-3">
+                        <h3 className="text-lg font-bold">Lorem Ipsum</h3>
+                        <p className="text-sm">
+                           Lorem, ipsum dolor sit amet consectetur adipisicing
+                           elit. Harum accusantium nostrum, iusto delectus ea
+                           sunt.
+                        </p>
+                     </div>
+                  </div>
+                  <div className="w-full max-w-60 min-h-56 md:min-h-72 h-full flex flex-col gap-4 bg-white dark:bg-gray p-6 shadow-md dark:shadow-md-dark ">
+                     <TbTargetArrow className="w-10 h-10" />
+
+                     <div className="flex flex-col gap-3">
+                        <h3 className="text-lg font-bold">Lorem Ipsum</h3>
+                        <p className="text-sm">
+                           Lorem, ipsum dolor sit amet consectetur adipisicing
+                           elit. Harum accusantium nostrum, iusto delectus ea
+                           sunt.
+                        </p>
+                     </div>
+                  </div>
                </div>
             </div>
          </section>

@@ -87,7 +87,7 @@ const Sidebar = () => {
                            About Us
                         </NavLink>
                         <NavLink
-                           to="/about"
+                           to="/blog"
                            className={({ isActive }) =>
                               `${isActive ? "text-richElectricBlue" : "text-current"}`
                            }
