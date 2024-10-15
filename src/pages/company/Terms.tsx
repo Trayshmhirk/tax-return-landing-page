@@ -25,7 +25,7 @@ const Terms = () => {
          <section className="flex flex-col items-center py-8 pb-10 md:py-16 px-5 sm:px-8 lg:px-10">
             <div className="container flex flex-col gap-6">
                <div className="flex flex-col gap-4">
-                  <h2 className="text-lg md:text-xl font-bold">
+                  <h2 className="text-2xl md:text-4xl font-bold">
                      Welcome to Tax Returns
                   </h2>
 

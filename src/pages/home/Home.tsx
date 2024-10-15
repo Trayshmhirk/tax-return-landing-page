@@ -65,51 +65,47 @@ const Home = () => {
          <section className="flex flex-col items-center gap-10 md:gap-14 py-8 pb-10 md:py-14 px-5 sm:px-8 lg:px-10">
             <div className="container flex flex-col sm:flex-row items-center justify-center gap-5 md:gap-8">
                <div className="w-full h-full min-w-36 min-h-32 max-w-48 flex flex-col items-center justify-center gap-2 bg-richElectricBlue text-white text-center p-6 md:p-10 rounded-2xl shadow-xl dark:shadow-2xl">
-                  <p className="text-2xl md:text-4xl font-bold">1K</p>
-                  <span className="text-sm font-medium">HAPPY CUSTOMERS</span>
+                  <h2 className="text-2xl md:text-4xl font-bold">1K</h2>
+                  <p className="text-sm font-medium">HAPPY CUSTOMERS</p>
                </div>
                <div className="w-full h-full min-w-36 min-h-32 max-w-48 flex flex-col items-center justify-center gap-2 bg-richElectricBlue text-white text-center p-6 md:p-10 rounded-2xl shadow-xl dark:shadow-2xl">
-                  <p className="text-2xl md:text-4xl font-bold">$1M+</p>
-                  <span className="text-sm font-medium">
-                     MONTHLY TAX CLEARED
-                  </span>
+                  <h2 className="text-2xl md:text-4xl font-bold">$1M+</h2>
+                  <p className="text-sm font-medium">MONTHLY TAX CLEARED</p>
                </div>
                <div className="w-full h-full min-w-36 min-h-32 max-w-48 flex flex-col items-center justify-center gap-2 bg-richElectricBlue text-white text-center p-6 md:p-10 rounded-2xl shadow-xl dark:shadow-2xl">
-                  <p className="text-2xl md:text-4xl font-bold">24/7</p>
-                  <span className="text-sm font-medium">
-                     PROFESSIONAL SUPPORT
-                  </span>
+                  <h2 className="text-2xl md:text-4xl font-bold">24/7</h2>
+                  <p className="text-sm font-medium">PROFESSIONAL SUPPORT</p>
                </div>
             </div>
 
             <div className="container flex flex-col sm:flex-row items-center justify-center gap-5 lg:gap-10">
                <div className="flex flex-col items-center justify-center gap-3 text-center">
-                  <p className="text-sm md:text-xl font-bold">Advantages</p>
-                  <span className="max-w-[300px] sm:max-w-xs text-mutedGray dark:text-chineseWhite text-xs md:text-sm font-medium">
+                  <h3 className="text-sm md:text-xl font-bold">Advantages</h3>
+                  <p className="max-w-[300px] sm:max-w-xs text-mutedGray dark:text-chineseWhite text-xs md:text-sm font-medium">
                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                      Necessitatibus culpa ex architecto rem.
-                  </span>
+                  </p>
                </div>
                <div className="flex flex-col items-center justify-center gap-3 text-center">
-                  <p className="text-sm md:text-xl font-bold">Benefits</p>
-                  <span className="max-w-[300px] sm:max-w-xs text-mutedGray dark:text-chineseWhite text-xs md:text-sm font-medium">
+                  <h3 className="text-sm md:text-xl font-bold">Benefits</h3>
+                  <p className="max-w-[300px] sm:max-w-xs text-mutedGray dark:text-chineseWhite text-xs md:text-sm font-medium">
                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                      Necessitatibus culpa ex architecto rem.
-                  </span>
+                  </p>
                </div>
                <div className="flex flex-col items-center justify-center gap-3 text-center">
-                  <p className="text-sm md:text-xl font-bold">Profits</p>
-                  <span className="max-w-[300px] sm:max-w-xs text-mutedGray dark:text-chineseWhite text-xs md:text-sm font-medium">
+                  <h3 className="text-sm md:text-xl font-bold">Profits</h3>
+                  <p className="max-w-[300px] sm:max-w-xs text-mutedGray dark:text-chineseWhite text-xs md:text-sm font-medium">
                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                      Necessitatibus culpa ex architecto rem.
-                  </span>
+                  </p>
                </div>
             </div>
          </section>
 
          <section className="flex flex-col items-center gap-10 md:gap-14 py-8 pb-10 md:py-14 px-5 sm:px-8 lg:px-10">
             <div className="container flex flex-col sm:flex-row items-center justify-center gap-5 md:gap-8">
-               rest
+               body
             </div>
          </section>
 

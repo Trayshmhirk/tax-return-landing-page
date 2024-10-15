@@ -34,8 +34,8 @@ const Contact = () => {
 
          <section className="flex flex-col items-center gap-10 md:gap-14 py-8 pb-10 md:py-16 px-5 sm:px-8 lg:px-10">
             <div className="container flex flex-col gap-7">
-               <div className="flex flex-col gap-2">
-                  <h2 className="text-lg lg:text-3xl font-bold">
+               <div className="flex flex-col gap-4">
+                  <h2 className="text-2xl md:text-4xl font-bold">
                      Get In Touch
                   </h2>
                   <p className="max-w-lg text-sm font-medium">
@@ -74,14 +74,14 @@ const Contact = () => {
 
                   <div className="w-full flex flex-col gap-6 bg-richElectricBlue px-6 py-8 rounded-xl">
                      <div className="flex flex-col gap-2">
-                        <p className="text-base md:text-2xl font-bold text-white">
+                        <h3 className="text-base md:text-2xl font-bold text-white">
                            Our newsletter
-                        </p>
-                        <span className="text-white text-sm">
+                        </h3>
+                        <p className="text-white text-sm">
                            Lorem ipsum dolor sit amet consectetur adipisicing
                            elit. Earum ipsam amet accusantium dolorum nobis
                            velit dignissimos illo et doloremque laudantium.
-                        </span>
+                        </p>
                      </div>
 
                      <div className="flex flex-col gap-3">
@@ -100,30 +100,30 @@ const Contact = () => {
 
             <div className="container grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-8">
                <div className="flex flex-col gap-5 bg-darkRichElectricBlue text-white px-6 py-8 rounded-xl">
-                  <h2 className="flex items-center gap-2 lg:text-lg font-bold">
+                  <h3 className="flex items-center gap-2 md:text-lg font-bold">
                      <ContactIcon />
                      (+234) 80 5571 2758
-                  </h2>
+                  </h3>
                   <p className="max-w-sm text-sm font-medium">
                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                      Sapiente sint quisquam quam nostrum, nihil et soluta!
                   </p>
                </div>
                <div className="flex flex-col gap-5 bg-richElectricBlue text-white px-6 py-8 rounded-xl">
-                  <h2 className="flex items-center gap-2 lg:text-lg font-bold">
+                  <h3 className="flex items-center gap-2 md:text-lg font-bold">
                      <MailOpen />
                      mail@taxreturns.com
-                  </h2>
+                  </h3>
                   <p className="max-w-sm text-sm font-medium">
                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                      Sapiente sint quisquam quam nostrum, nihil et soluta!
                   </p>
                </div>
                <div className="flex flex-col gap-5 bg-bubbles dark:text-eerieBlack px-6 py-8 rounded-xl">
-                  <h2 className="flex items-center gap-2 lg:text-lg font-bold">
+                  <h3 className="flex items-center gap-2 md:text-lg font-bold">
                      <MapPinHouse />
                      Lagos, Nigeria.
-                  </h2>
+                  </h3>
                   <p className="max-w-sm text-sm font-medium">
                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                      Sapiente sint quisquam quam nostrum, nihil et soluta!

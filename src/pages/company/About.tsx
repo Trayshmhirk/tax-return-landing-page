@@ -41,7 +41,7 @@ const About = () => {
 
          <section className="flex flex-col items-center bg-cultured dark:bg-gray py-8 pb-10 md:py-16 px-5 sm:px-8 lg:px-10">
             <div className="container flex flex-col gap-10">
-               <h2 className="text-xl md:text-3xl font-bold text-center">
+               <h2 className="text-2xl md:text-4xl font-bold text-center">
                   About Us
                </h2>
 
@@ -108,7 +108,7 @@ const About = () => {
 
          <section className="flex flex-col items-center py-8 pb-10 md:py-16 px-5 sm:px-8 lg:px-10">
             <div className="container flex flex-col gap-8">
-               <h2 className="text-xl md:text-3xl font-bold text-center">
+               <h2 className="text-2xl md:text-4xl font-bold text-center">
                   Why Us
                </h2>
 
@@ -261,6 +261,16 @@ const About = () => {
                      </div>
                   </div>
                </div>
+            </div>
+         </section>
+
+         <section className="flex flex-col items-center py-8 pb-10 md:py-16 px-5 sm:px-8 lg:px-10">
+            <div className="container flex flex-col gap-8">
+               <h2 className="text-2xl md:text-4xl font-bold text-center">
+                  Our Partners
+               </h2>
+
+               <div className="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-12"></div>
             </div>
          </section>
       </main>

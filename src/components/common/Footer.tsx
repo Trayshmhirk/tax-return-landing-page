@@ -93,7 +93,7 @@ const Footer = () => {
                            About Us
                         </NavLink>
                         <NavLink
-                           to="/about"
+                           to="/blog"
                            className="footer-link hover:text-white"
                         >
                            Blog
