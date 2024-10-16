@@ -40,34 +40,32 @@ const About = () => {
          </section>
 
          <section className="flex flex-col items-center bg-cultured dark:bg-gray py-8 pb-10 md:py-16 px-5 sm:px-8 lg:px-10">
-            <div className="container flex flex-col gap-10">
-               <h2 className="text-2xl md:text-4xl font-bold text-center">
-                  About Us
-               </h2>
-
-               <div className="flex flex-col sm:flex-row gap-5 lg:gap-12">
-                  <div className="w-full flex flex-col gap-3">
-                     <p className="text-sm md:text-base font-medium">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                     </p>
-                     <p className="max-w-md text-mutedGray dark:text-chineseWhite text-xs md:text-sm">
+            <div className="container flex">
+               <div className="flex flex-col md:flex-row gap-6 md:gap-10 lg:gap-16">
+                  <div className="w-full h-full md:min-h-64 flex flex-col gap-3 bg-richElectricBlue text-white px-6 py-5 rounded-xl">
+                     <h2 className="flex items-center gap-2 md:text-xl font-bold">
+                        <span className="h-3/4 w-1 bg-gray" />
+                        About Tax Returns
+                     </h2>
+                     <h3 className="text-xl md:text-3xl font-medium">
+                        Lorem ipsum dolor sit amet.
+                     </h3>
+                     <p className="max-w-md text-xs md:text-sm text-ghostWhite">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Adipisci dignissimos odit, iusto praesentium sequi rem
                         ullam velit sunt, fuga soluta reiciendis atque quia
                         accusantium eius. Rerum dolorem suscipit id, rem
                         exercitationem autem qui voluptas dolore quidem iste
-                        corporis natus veniam pariatur tempore animi. Magnam
-                        molestias in, eaque nisi sit quia quae quo, aliquam
-                        atque maxime fugit id nihil autem adipisci veniam optio
-                        fuga! Animi, accusamus! Dolores assumenda accusamus
-                        consectetur non, iusto dolorum vel adipisci nesciunt
-                        repudiandae nisi cumque impedit nobis asperiores esse
-                        placeat iure sit reprehenderit ullam totam ipsam neque
-                        magni in? Expedita nemo amet corporis nobis dicta
-                        dignissimos vitae!
+                        corporis natus veniam pariatur tempore animi.
                      </p>
                   </div>
-                  <div className="w-full h-full flex flex-col gap-4">lorem</div>
+                  <div className="w-full h-full flex flex-col gap-4 rounded-ss-xl md:rounded-ss-[36px] rounded-ee-xl md:rounded-ee-[36px] overflow-hidden">
+                     <img
+                        src="https://i.postimg.cc/pdGkTv2f/istockphoto-1500910131-2048x2048-1.jpg" // https://i.postimg.cc/d372DZWv/istockphoto-1493271502-2048x2048-1.jpg
+                        alt=""
+                        className="w-full h-full"
+                     />
+                  </div>
                </div>
             </div>
          </section>
@@ -264,7 +262,7 @@ const About = () => {
             </div>
          </section>
 
-         <section className="flex flex-col items-center py-8 pb-10 md:py-16 px-5 sm:px-8 lg:px-10">
+         <section className="flex flex-col items-center py-8 pb-10 md:py-16 px-5 sm:px-8 lg:px-10 bg-white dark:bg-gray">
             <div className="container flex flex-col gap-8">
                <h2 className="text-2xl md:text-4xl font-bold text-center">
                   Our Partners
