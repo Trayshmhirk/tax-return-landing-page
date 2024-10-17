@@ -4,6 +4,7 @@ import { FaUserTie } from "react-icons/fa";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { TbTargetArrow } from "react-icons/tb";
+import { Input } from "@/components/ui/input";
 
 const About = () => {
    // Use an array of booleans to track collapsed state for each card
@@ -273,6 +274,34 @@ const About = () => {
                </h2>
 
                <div className="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-12"></div>
+            </div>
+         </section>
+
+         <section className="flex flex-col items-center py-8 pb-10 md:py-16 px-5 sm:px-8 lg:px-10">
+            <div className="container flex justify-center bg-bubbles dark:bg-gray px-6 py-8 rounded-xl shadow-xl dark:shadow-2xl">
+               <div className="max-w-xl flex flex-col items-center gap-9 text-center">
+                  <div className="flex flex-col gap-5">
+                     <h3 className="text-2xl md:text-4xl font-bold">
+                        Subscribe to Our Newsletter
+                     </h3>
+                     <p className="text-sm">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Earum ipsam amet accusantium dolorum nobis velit
+                        dignissimos illo et doloremque laudantium.
+                     </p>
+                  </div>
+
+                  <div className="w-full flex items-center gap-5">
+                     <Input
+                        type="text"
+                        className="dark:bg-mutedGray text-eerieBlack dark:text-white font-medium rounded-md outline-none border-0"
+                        placeholder="Enter your email"
+                     />
+                     <Button className="bg-gray dark:bg-richElectricBlue hover:shadow-lg-dark">
+                        Subscribe
+                     </Button>
+                  </div>
+               </div>
             </div>
          </section>
       </main>
